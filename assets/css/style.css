@@ -43,9 +43,6 @@ ol {
   .footer .copyright__link:hover, .footer .copyright__link:focus {
     text-decoration: underline #ddb180; }
 
-body {
-  padding-bottom: 100px; }
-
 #banner-part .slider-for .slide-bg {
   height: 800px;
   padding: 130px 0 50px;
@@ -69,6 +66,8 @@ body {
     text-transform: uppercase; }
   #banner-part .slider-for .slide-bg .text-content p {
     font-size: 16px; }
+    #banner-part .slider-for .slide-bg .text-content p span {
+      color: red; }
 #banner-part .slider-for .first-slider {
   background-image: url(../images/favorite/f1.jpg);
   z-index: -2; }
@@ -98,14 +97,18 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    margin: 0px 10px; }
+    margin: 0px 10px;
+    transition: all linear .3s;
+    border: 2px solid #141414; }
+    #banner-part .slider-nav .nav-slide-box:hover {
+      border: 2px solid #000; }
   #banner-part .slider-nav .prev-arrow {
     color: #fff;
     padding: 10px 14px;
     border: none;
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 20px;
-    right: 7px;
+    left: 7px;
     position: absolute;
     z-index: 9;
     top: 33%;
@@ -116,7 +119,113 @@ body {
     border: none;
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 20px;
-    left: 10px;
+    right: 7px;
+    position: absolute;
+    z-index: 9;
+    top: 33%;
+    cursor: pointer; }
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0000002e;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  position: fixed;
+  z-index: 999; }
+  .navbar img {
+    height: 67px;
+    width: 140px; }
+  .navbar .navbar-nav .nav-link {
+    color: #fff; }
+    .navbar .navbar-nav .nav-link:hover {
+      color: #fff; }
+  .navbar .navbar-nav .active > .nav-link,
+  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link.show,
+  .navbar .navbar-nav .show > .nav-link {
+    color: #fff; }
+  .navbar .btn {
+    background-color: transparent;
+    border: 1px solid red;
+    color: #fff;
+    padding: 6px 15px;
+    background-color: red; }
+
+#slider-part {
+  padding: 80px 0px;
+  background: #141414;
+  color: #fff; }
+  #slider-part h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.2;
+    color: #fff;
+    padding-bottom: 30px; }
+  #slider-part .container {
+    max-width: 1230px; }
+  #slider-part .top-slider .nav-slide-box {
+    cursor: pointer;
+    border-radius: 5px;
+    height: 180px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0px 10px 50px;
+    transition: all linear .3s;
+    border: 2px solid #141414; }
+    #slider-part .top-slider .nav-slide-box .overlay {
+      background-color: #141414c7;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      padding: 30px 40px;
+      opacity: 0;
+      transform: scale(0); }
+      #slider-part .top-slider .nav-slide-box .overlay h4 {
+        font-size: 30px;
+        padding: 10px 0px 25px; }
+      #slider-part .top-slider .nav-slide-box .overlay a {
+        padding: 10px 20px;
+        color: #fff;
+        font-weight: 600;
+        background-color: red;
+        border: 1px solid red;
+        transition: all linear .3s; }
+        #slider-part .top-slider .nav-slide-box .overlay a:hover {
+          color: #fff;
+          background-color: transparent;
+          border: 1px solid red; }
+    #slider-part .top-slider .nav-slide-box:hover {
+      border: 2px solid #000; }
+    #slider-part .top-slider .nav-slide-box:hover .overlay {
+      opacity: 1;
+      transform: scale(1);
+      transition: all linear .3s; }
+  #slider-part .top-slider .prev-arrow {
+    color: #fff;
+    padding: 10px 14px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    left: 12px;
+    position: absolute;
+    z-index: 9;
+    top: 33%;
+    cursor: pointer; }
+  #slider-part .top-slider .next-arrow {
+    color: #fff;
+    padding: 10px 14px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    right: 10px;
     position: absolute;
     z-index: 9;
     top: 33%;
