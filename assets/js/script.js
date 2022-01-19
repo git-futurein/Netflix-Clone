@@ -14,6 +14,7 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    autoplay:true,
     swipe: true,
     fade: false,
     asNavFor: '.slider-nav'
@@ -23,6 +24,7 @@ $(function () {
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: false,
+    autoplay:true,
     swipe: false,
     centerMode: false,
     focusOnSelect: true,
@@ -35,6 +37,7 @@ $(function () {
     dots: false,
     infinite: true,
     speed: 300,
+    autoplay:true,
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"> <i class="fas fa-chevron-left"></i></button>',
