@@ -14,7 +14,8 @@
 
 html,
 body {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif; }
 
 /* Change text & background color */
 a,
@@ -41,5 +42,84 @@ ol {
   font-size: 0.8rem; }
   .footer .copyright__link:hover, .footer .copyright__link:focus {
     text-decoration: underline #ddb180; }
+
+body {
+  padding-bottom: 100px; }
+
+#banner-part .slider-for .slide-bg {
+  height: 800px;
+  padding: 130px 0 50px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff; }
+  #banner-part .slider-for .slide-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, black 0%, #141414 35%, rgba(83, 100, 141, 0) 100%);
+    width: 100%;
+    z-index: -1; }
+  #banner-part .slider-for .slide-bg .text-content h2 {
+    padding: 50px 0px 20px;
+    font-size: 31px;
+    text-transform: uppercase; }
+  #banner-part .slider-for .slide-bg .text-content p {
+    font-size: 16px; }
+#banner-part .slider-for .first-slider {
+  background-image: url(../images/favorite/f1.jpg);
+  z-index: -2; }
+#banner-part .slider-for .second-slider {
+  background-image: url(../images/favorite/f2.jpg);
+  z-index: -2; }
+#banner-part .slider-for .third-slider {
+  background-image: url(../images/favorite/f3.jpg);
+  z-index: -2; }
+#banner-part .slider-for .fourth-slider {
+  background-image: url(../images/favorite/f4.jpg);
+  z-index: -2; }
+#banner-part .slider-for .fifth-slider {
+  background-image: url(../images/favorite/f5.jpg);
+  z-index: -2; }
+#banner-part .slider-nav {
+  position: absolute;
+  bottom: -90px;
+  left: 70px;
+  width: 90%; }
+  #banner-part .slider-nav img {
+    width: 100%; }
+  #banner-part .slider-nav .nav-slide-box {
+    cursor: pointer;
+    border-radius: 5px;
+    height: 180px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0px 10px; }
+  #banner-part .slider-nav .prev-arrow {
+    color: #fff;
+    padding: 10px 14px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    right: 7px;
+    position: absolute;
+    z-index: 9;
+    top: 33%;
+    cursor: pointer; }
+  #banner-part .slider-nav .next-arrow {
+    color: #fff;
+    padding: 10px 14px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    left: 10px;
+    position: absolute;
+    z-index: 9;
+    top: 33%;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
