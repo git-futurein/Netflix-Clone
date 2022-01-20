@@ -85,15 +85,17 @@ ol {
   z-index: -2; }
 #banner-part .slider-nav {
   position: absolute;
-  bottom: -90px;
-  left: 70px;
-  width: 90%; }
+  bottom: -140px;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  height: 200px; }
   #banner-part .slider-nav img {
     width: 100%; }
   #banner-part .slider-nav .nav-slide-box {
     cursor: pointer;
+    width: 25%;
     border-radius: 5px;
-    height: 180px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -159,77 +161,81 @@ ol {
   padding: 80px 0px;
   background: #141414;
   color: #fff; }
-  #slider-part h3 {
-    font-size: 1.4em;
-    font-weight: 500;
-    margin: 0;
-    line-height: 1.2;
-    color: #fff;
-    padding-bottom: 30px; }
-  #slider-part .container {
-    max-width: 1230px; }
-  #slider-part .top-slider .nav-slide-box {
-    cursor: pointer;
-    border-radius: 5px;
-    height: 180px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: 0px 10px 50px;
-    transition: all linear .3s;
-    border: 2px solid #141414; }
-    #slider-part .top-slider .nav-slide-box .overlay {
-      background-color: #141414c7;
+  #slider-part .slider-div {
+    width: 90%;
+    margin: 0 auto; }
+    #slider-part .slider-div .slider-title h3 {
+      font-size: 1.4em;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #fff;
+      padding: 30px 0px;
+      margin-left: 10px; }
+    #slider-part .slider-div .top-slider .nav-slide-box {
+      width: 25%;
+      float: left;
+      margin: 0px 10px; }
+      #slider-part .slider-div .top-slider .nav-slide-box .slide-content {
+        cursor: pointer;
+        border-radius: 5px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: all linear .3s;
+        border: 2px solid #141414;
+        position: relative; }
+        #slider-part .slider-div .top-slider .nav-slide-box .slide-content .overlay {
+          background-color: #141414c7;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          padding: 30px;
+          opacity: 0;
+          transform: scale(0); }
+          #slider-part .slider-div .top-slider .nav-slide-box .slide-content .overlay h4 {
+            font-size: 30px;
+            padding: 10px 0px 5px; }
+          #slider-part .slider-div .top-slider .nav-slide-box .slide-content .overlay a {
+            padding: 10px 20px;
+            color: #fff;
+            font-weight: 600;
+            background-color: red;
+            border: 1px solid red;
+            transition: all linear .3s; }
+            #slider-part .slider-div .top-slider .nav-slide-box .slide-content .overlay a:hover {
+              color: #fff;
+              background-color: transparent;
+              border: 1px solid red; }
+        #slider-part .slider-div .top-slider .nav-slide-box .slide-content:hover {
+          border: 2px solid #000; }
+        #slider-part .slider-div .top-slider .nav-slide-box .slide-content:hover .overlay {
+          opacity: 1;
+          transform: scale(1);
+          transition: all linear .3s; }
+    #slider-part .slider-div .top-slider .prev-arrow {
+      color: #fff;
+      padding: 10px 14px;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-size: 20px;
+      left: 12px;
       position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      padding: 30px 40px;
-      opacity: 0;
-      transform: scale(0); }
-      #slider-part .top-slider .nav-slide-box .overlay h4 {
-        font-size: 30px;
-        padding: 10px 0px 25px; }
-      #slider-part .top-slider .nav-slide-box .overlay a {
-        padding: 10px 20px;
-        color: #fff;
-        font-weight: 600;
-        background-color: red;
-        border: 1px solid red;
-        transition: all linear .3s; }
-        #slider-part .top-slider .nav-slide-box .overlay a:hover {
-          color: #fff;
-          background-color: transparent;
-          border: 1px solid red; }
-    #slider-part .top-slider .nav-slide-box:hover {
-      border: 2px solid #000; }
-    #slider-part .top-slider .nav-slide-box:hover .overlay {
-      opacity: 1;
-      transform: scale(1);
-      transition: all linear .3s; }
-  #slider-part .top-slider .prev-arrow {
-    color: #fff;
-    padding: 10px 14px;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.6);
-    font-size: 20px;
-    left: 12px;
-    position: absolute;
-    z-index: 9;
-    top: 33%;
-    cursor: pointer; }
-  #slider-part .top-slider .next-arrow {
-    color: #fff;
-    padding: 10px 14px;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.6);
-    font-size: 20px;
-    right: 10px;
-    position: absolute;
-    z-index: 9;
-    top: 33%;
-    cursor: pointer; }
+      z-index: 9;
+      top: 33%;
+      cursor: pointer; }
+    #slider-part .slider-div .top-slider .next-arrow {
+      color: #fff;
+      padding: 10px 14px;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-size: 20px;
+      right: 10px;
+      position: absolute;
+      z-index: 9;
+      top: 33%;
+      cursor: pointer; }
 
 @media (min-width: 1400px) and (max-width: 2400px) {
   #banner-part .slider-for .slide-bg {
@@ -242,10 +248,19 @@ ol {
     color: #fff; }
 
   #banner-part .slider-nav {
+    bottom: 5%; }
+
+  #banner-part .slider-nav .next-arrow {
+    color: #fff;
+    padding: 10px 14px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    right: 11px;
     position: absolute;
-    bottom: 5%;
-    left: 70px;
-    width: 90%; } }
+    z-index: 9;
+    top: 45%;
+    cursor: pointer; } }
 /*======== large device =========*/
 /*======== medium device =========*/
 /*======== small device =========*/

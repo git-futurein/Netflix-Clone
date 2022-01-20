@@ -10,12 +10,22 @@
     }
 
     #banner-part .slider-nav {
-        position: absolute;
         bottom: 5%;
-        left: 70px;
-        width: 90%;
     }
-    
+
+    #banner-part .slider-nav .next-arrow {
+        color: #fff;
+        padding: 10px 14px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.6);
+        font-size: 20px;
+        right: 11px;
+        position: absolute;
+        z-index: 9;
+        top: 45%;
+        cursor: pointer;
+    }
+
 }
 
 /*======== large device =========*/
