@@ -142,14 +142,22 @@ ol {
     height: 67px;
     width: 140px; }
   .navbar .navbar-nav .nav-link {
-    color: #fff; }
+    color: #fff;
+    text-transform: uppercase;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all linear .3s; }
     .navbar .navbar-nav .nav-link:hover {
-      color: #fff; }
+      color: red; }
   .navbar .navbar-nav .active > .nav-link,
   .navbar .navbar-nav .nav-link.active,
   .navbar .navbar-nav .nav-link.show,
   .navbar .navbar-nav .show > .nav-link {
-    color: #fff; }
+    color: red; }
+  .navbar .navbar-nav .active:hover {
+    color: red; }
   .navbar .btn {
     background-color: transparent;
     border: 1px solid red;
@@ -240,7 +248,7 @@ ol {
 @media (min-width: 1400px) and (max-width: 2400px) {
   #banner-part .slider-for .slide-bg {
     height: 100vh;
-    padding: 200px 0 50px;
+    padding-top: 110px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
